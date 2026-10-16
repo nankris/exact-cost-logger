@@ -1,0 +1,34 @@
+{
+ "label": "explain_concept",
+ "rep": 1,
+ "text": "KV caching speeds up text generation by remembering attention math the model has already done.\n\nA language model writes one token at a time. At each step, attention needs a key vector and a value vector for every token so far. Recomputing those vectors for the whole history would repeat the same work.\n\nThe cache stores each token\u2019s key (K) and value (V) after the first computation. For the next token, the model calculates K and V only for that new token and appends them. Attention still sees the full history through the stored vectors.\n\nGeneration is much faster. The cost is GPU memory: the cache grows with sequence length, batch size, layers, and attention heads, so long prompts or large batches can fill memory while the model weights themselves still fit.",
+ "raw": {
+  "text": "KV caching speeds up text generation by remembering attention math the model has already done.\n\nA language model writes one token at a time. At each step, attention needs a key vector and a value vector for every token so far. Recomputing those vectors for the whole history would repeat the same work.\n\nThe cache stores each token\u2019s key (K) and value (V) after the first computation. For the next token, the model calculates K and V only for that new token and appends them. Attention still sees the full history through the stored vectors.\n\nGeneration is much faster. The cost is GPU memory: the cache grows with sequence length, batch size, layers, and attention heads, so long prompts or large batches can fill memory while the model weights themselves still fit.",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab2-313c-7473-af32-cd2111b441b1",
+  "requestId": "bc375ae1-cf16-42af-9df1-fe89979c60af",
+  "cwd": "/tmp/g021_explain_concept_psofr6sx",
+  "thought": "I will explain KV caching in LLM inference to a junior developer in about 120 words.\n\nThe explanation will cover what KV caches are, why they exist for autoregressive generation, how they work, and the memory-speed tradeoff.\n\nDrafting the explanation now. The draft explains that KV caching stores key and value vectors from past tokens after the first pass. Each new token only requires computing K and V for itself, then appending to the cache. Attention reuses stored vectors instead of rebuilding them, which speeds up generation.\n\nThe draft now includes the memory cost. KV caches grow with sequence length, batch size, and model depth. Long contexts or large batches can exhaust GPU memory even when the model weights fit.\n\nThe draft is about 142 words, so I am trimming it to roughly 120. I have started rewriting the opening sentence to be more concise.\n\nThe draft is now 121 words. I will deliver it directly without extra preamble.",
+  "usage": {
+   "input_tokens": 13381,
+   "cache_read_input_tokens": 2304,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 1343,
+   "reasoning_tokens": 1188,
+   "total_tokens": 17028
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.01223048,
+  "total_cost_usd_ticks": 122304800,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 13381,
+    "outputTokens": 1343,
+    "cacheReadInputTokens": 2304,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.01223048
+   }
+  }
+ }
+}

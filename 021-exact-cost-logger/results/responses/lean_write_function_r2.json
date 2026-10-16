@@ -1,0 +1,34 @@
+{
+ "label": "write_function",
+ "rep": 2,
+ "text": "```python\ndef dedupe_keep_order(items):\n    \"\"\"Remove duplicates from a list, keeping the first occurrence of each item.\n\n    >>> dedupe_keep_order([1, 2, 1, 3, 2, 4])\n    [1, 2, 3, 4]\n    >>> dedupe_keep_order([\"b\", \"a\", \"b\", \"c\", \"a\"])\n    ['b', 'a', 'c']\n    \"\"\"\n    seen = set()\n    result = []\n    for item in items:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\n```",
+ "raw": {
+  "text": "```python\ndef dedupe_keep_order(items):\n    \"\"\"Remove duplicates from a list, keeping the first occurrence of each item.\n\n    >>> dedupe_keep_order([1, 2, 1, 3, 2, 4])\n    [1, 2, 3, 4]\n    >>> dedupe_keep_order([\"b\", \"a\", \"b\", \"c\", \"a\"])\n    ['b', 'a', 'c']\n    \"\"\"\n    seen = set()\n    result = []\n    for item in items:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\n```",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab5-0cdd-7c91-b34c-a59621ab4475",
+  "requestId": "3d7e92bf-3450-4a39-b26a-af3792508d6b",
+  "cwd": "/tmp/tmp_zm_roa4",
+  "thought": "I need to write a Python function that removes duplicates from a list while preserving the order of first occurrences.",
+  "usage": {
+   "input_tokens": 3887,
+   "cache_read_input_tokens": 1152,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 380,
+   "reasoning_tokens": 231,
+   "total_tokens": 5419
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.0036142,
+  "total_cost_usd_ticks": 36142000,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 3887,
+    "outputTokens": 380,
+    "cacheReadInputTokens": 1152,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.0036142
+   }
+  }
+ }
+}

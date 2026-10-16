@@ -1,0 +1,33 @@
+{
+ "label": "sql_query",
+ "rep": 1,
+ "text": "```sql\nSELECT customer_id,\n       SUM(amount) AS total_amount\nFROM orders\nWHERE created_at >= CURRENT_TIMESTAMP - INTERVAL '30 days'\nGROUP BY customer_id\nORDER BY total_amount DESC\nLIMIT 5;\n```\n\n`CURRENT_TIMESTAMP - INTERVAL '30 days'` is a rolling 30-day window. If `created_at` is `date` rather than `timestamp`, use `CURRENT_DATE - INTERVAL '30 days'` instead.",
+ "raw": {
+  "text": "```sql\nSELECT customer_id,\n       SUM(amount) AS total_amount\nFROM orders\nWHERE created_at >= CURRENT_TIMESTAMP - INTERVAL '30 days'\nGROUP BY customer_id\nORDER BY total_amount DESC\nLIMIT 5;\n```\n\n`CURRENT_TIMESTAMP - INTERVAL '30 days'` is a rolling 30-day window. If `created_at` is `date` rather than `timestamp`, use `CURRENT_DATE - INTERVAL '30 days'` instead.",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab4-c74d-7e11-bec0-b4b21b5eaba1",
+  "requestId": "15e06f47-24e9-4ab9-912d-3d7cce8e6870",
+  "cwd": "/tmp/tmpfc0yp1y8",
+  "usage": {
+   "input_tokens": 3890,
+   "cache_read_input_tokens": 1152,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 164,
+   "reasoning_tokens": 63,
+   "total_tokens": 5206
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.0031756,
+  "total_cost_usd_ticks": 31756000,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 3890,
+    "outputTokens": 164,
+    "cacheReadInputTokens": 1152,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.0031756
+   }
+  }
+ }
+}

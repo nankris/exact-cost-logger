@@ -1,0 +1,34 @@
+{
+ "label": "explain_concept",
+ "rep": 2,
+ "text": "KV caching speeds up LLM text generation by remembering work the model has already done.\n\nWhen a model writes the next token, self-attention compares that token to every earlier token using Query, Key, and Value vectors. Keys and Values for past tokens never change. Without a cache, the model recomputes them on every step, which gets slower as the sequence grows.\n\nA KV cache stores those Key and Value tensors after the first pass. Each new token only computes its own Query, Key, and Value, then attends to the cached history plus itself. The cache is appended and reused for the next step.\n\nThe result is much faster decoding. The cost is extra GPU memory: the cache grows with sequence length, batch size, and number of layers. That is why long contexts and large batches can run out of memory even when the model weights fit.",
+ "raw": {
+  "text": "KV caching speeds up LLM text generation by remembering work the model has already done.\n\nWhen a model writes the next token, self-attention compares that token to every earlier token using Query, Key, and Value vectors. Keys and Values for past tokens never change. Without a cache, the model recomputes them on every step, which gets slower as the sequence grows.\n\nA KV cache stores those Key and Value tensors after the first pass. Each new token only computes its own Query, Key, and Value, then attends to the cached history plus itself. The cache is appended and reused for the next step.\n\nThe result is much faster decoding. The cost is extra GPU memory: the cache grows with sequence length, batch size, and number of layers. That is why long contexts and large batches can run out of memory even when the model weights fit.",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab5-3f38-7631-8ef2-4749203c20b5",
+  "requestId": "2879ec07-dfde-407b-b930-070a3fc1a4c3",
+  "cwd": "/tmp/tmplnjwyr2r",
+  "thought": "I'll explain KV caching in LLM inference to a junior developer in about 120 words.",
+  "usage": {
+   "input_tokens": 3865,
+   "cache_read_input_tokens": 1152,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 345,
+   "reasoning_tokens": 173,
+   "total_tokens": 5362
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.00352784,
+  "total_cost_usd_ticks": 35278400,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 3865,
+    "outputTokens": 345,
+    "cacheReadInputTokens": 1152,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.00352784
+   }
+  }
+ }
+}

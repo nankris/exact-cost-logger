@@ -1,0 +1,34 @@
+{
+ "label": "draft_tweet",
+ "rep": 1,
+ "text": "New post: I measured what my AI coding agent really costs per day. Tokens, retries, and the quiet background loops \u2014 the daily total surprised me. \ud83d\udcca",
+ "raw": {
+  "text": "New post: I measured what my AI coding agent really costs per day. Tokens, retries, and the quiet background loops \u2014 the daily total surprised me. \ud83d\udcca",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab4-b5c0-7c10-9769-78a99e25f319",
+  "requestId": "16f7ef6d-d83e-4064-a050-ba48ef546cc5",
+  "cwd": "/tmp/tmppxgfij_e",
+  "thought": "Drafting a tweet under 270 characters to announce the blog post on AI coding agent costs.\n\nDrafted two versions of the tweet. One mentions tokens, retries, and hidden costs. The other focuses on tracking every token, retry, and background loop.\n\nSettled on a shorter draft: \"New post: I measured what my AI coding agent really costs per day. Turns out the invoice is only half the story.\" Now counting characters to verify it fits under 270.\n\nRejected the thread emoji as implying a thread. Final draft: \"New blog post: I measured what my AI coding agent really costs per day. Spoiler: the quiet retries add up faster than the headline model price.\"\n\nThe final draft is 143 characters, well under the 270 limit.\n\nDrafted a friendlier version with one emoji: \"\ud83d\udcca\". It highlights that the sticker price was easy, but retries and background runs were the surprise. The character count is roughly 160.",
+  "usage": {
+   "input_tokens": 3885,
+   "cache_read_input_tokens": 1152,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 1049,
+   "reasoning_tokens": 1016,
+   "total_tokens": 6086
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.0049776,
+  "total_cost_usd_ticks": 49776000,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 3885,
+    "outputTokens": 1049,
+    "cacheReadInputTokens": 1152,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.0049776
+   }
+  }
+ }
+}

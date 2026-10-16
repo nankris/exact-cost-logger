@@ -1,0 +1,33 @@
+{
+ "label": "email_reply",
+ "rep": 1,
+ "text": "Thank you for thinking of me and for sharing the details of the role. After reviewing the offer, I need to decline, as the salary is below what I\u2019m looking for at this stage. I enjoyed learning more about the opportunity and appreciate the time you took to reach out. Please keep me in mind for future roles that might be a stronger match.",
+ "raw": {
+  "text": "Thank you for thinking of me and for sharing the details of the role. After reviewing the offer, I need to decline, as the salary is below what I\u2019m looking for at this stage. I enjoyed learning more about the opportunity and appreciate the time you took to reach out. Please keep me in mind for future roles that might be a stronger match.",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab4-d130-7e50-b20f-b2b771bb3393",
+  "requestId": "05789200-4b73-485c-8009-6ca57006c84a",
+  "cwd": "/tmp/tmpz66m38wr",
+  "usage": {
+   "input_tokens": 3881,
+   "cache_read_input_tokens": 1152,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 117,
+   "reasoning_tokens": 47,
+   "total_tokens": 5150
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.0030736,
+  "total_cost_usd_ticks": 30736000,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 3881,
+    "outputTokens": 117,
+    "cacheReadInputTokens": 1152,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.0030736
+   }
+  }
+ }
+}

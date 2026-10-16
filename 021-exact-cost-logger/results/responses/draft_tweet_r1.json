@@ -1,0 +1,34 @@
+{
+ "label": "draft_tweet",
+ "rep": 1,
+ "text": "I'll look through the workspace for the blog post so the tweet matches what it actually says.",
+ "raw": {
+  "text": "I'll look through the workspace for the blog post so the tweet matches what it actually says.",
+  "stopReason": "cancelled",
+  "sessionId": "01a13ab1-e3fc-7542-aabb-4c9b9261446d",
+  "requestId": "5dad8c9b-8454-4b34-beee-20f93b4aa30d",
+  "cwd": "/tmp/g021_draft_tweet_usdoxvig",
+  "thought": "Drafting a tweet about the AI coding agent cost blog post.\n\nDrafting a conversational tweet that the subscription is only part of the total cost. Checking character count to stay under 270.\n\nSettled on a draft that frames the subscription as the easy part. Counting characters to confirm it stays under 270.\n\nThe first draft is 116 characters, well under the limit. Now weighing a shorter version that names tokens, retries, and long context.",
+  "usage": {
+   "input_tokens": 13675,
+   "cache_read_input_tokens": 17920,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 766,
+   "reasoning_tokens": 571,
+   "total_tokens": 32361
+  },
+  "num_turns": 2,
+  "total_cost_usd": 0.01390804,
+  "total_cost_usd_ticks": 139080400,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 13675,
+    "outputTokens": 766,
+    "cacheReadInputTokens": 17920,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 2,
+    "costUSD": 0.01390804
+   }
+  }
+ }
+}

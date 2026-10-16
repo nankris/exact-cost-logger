@@ -1,0 +1,34 @@
+{
+ "label": "summarise_text",
+ "rep": 2,
+ "text": "- ISRO, founded in 1969, is known for low-cost engineering, including a 2013 Mars Orbiter Mission that reached Mars orbit on the first try at a cost often compared to a Hollywood film.\n- Chandrayaan-3 landed near the Moon\u2019s south pole in August 2023, making India the first country to do so.\n- ISRO launches many foreign satellites commercially on its PSLV rocket and is developing the Gaganyaan crewed spaceflight programme.",
+ "raw": {
+  "text": "- ISRO, founded in 1969, is known for low-cost engineering, including a 2013 Mars Orbiter Mission that reached Mars orbit on the first try at a cost often compared to a Hollywood film.\n- Chandrayaan-3 landed near the Moon\u2019s south pole in August 2023, making India the first country to do so.\n- ISRO launches many foreign satellites commercially on its PSLV rocket and is developing the Gaganyaan crewed spaceflight programme.",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab2-7c13-7d31-bcb6-c2de0189f0cd",
+  "requestId": "a3a9233d-fc23-4dca-af43-9d65039c1e76",
+  "cwd": "/tmp/g021_summarise_text_s56km48s",
+  "thought": "I will summarize the ISRO paragraph in three bullet points.",
+  "usage": {
+   "input_tokens": 13497,
+   "cache_read_input_tokens": 2304,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 150,
+   "reasoning_tokens": 50,
+   "total_tokens": 15951
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.00987564,
+  "total_cost_usd_ticks": 98756400,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 13497,
+    "outputTokens": 150,
+    "cacheReadInputTokens": 2304,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.00987564
+   }
+  }
+ }
+}

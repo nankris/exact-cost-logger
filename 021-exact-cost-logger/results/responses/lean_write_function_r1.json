@@ -1,0 +1,34 @@
+{
+ "label": "write_function",
+ "rep": 1,
+ "text": "```python\ndef dedupe_keep_order(items):\n    \"\"\"Remove duplicates from a sequence, keeping the first occurrence of each item.\n\n    >>> dedupe_keep_order([1, 2, 1, 3, 2, 4])\n    [1, 2, 3, 4]\n    >>> dedupe_keep_order([\"a\", \"b\", \"a\", \"c\", \"b\"])\n    ['a', 'b', 'c']\n    \"\"\"\n    seen = set()\n    result = []\n    for item in items:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\n```",
+ "raw": {
+  "text": "```python\ndef dedupe_keep_order(items):\n    \"\"\"Remove duplicates from a sequence, keeping the first occurrence of each item.\n\n    >>> dedupe_keep_order([1, 2, 1, 3, 2, 4])\n    [1, 2, 3, 4]\n    >>> dedupe_keep_order([\"a\", \"b\", \"a\", \"c\", \"b\"])\n    ['a', 'b', 'c']\n    \"\"\"\n    seen = set()\n    result = []\n    for item in items:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\n```",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab4-b647-7c11-b83d-72d3682a9198",
+  "requestId": "ad7c4189-1d37-409d-9d47-89d74228f1f5",
+  "cwd": "/tmp/tmp8n3blep7",
+  "thought": "I need to write a Python function `dedupe_keep_order` that removes duplicates from a list while preserving the order of first occurrences. It should include a docstring and two doctest examples.",
+  "usage": {
+   "input_tokens": 3888,
+   "cache_read_input_tokens": 1152,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 483,
+   "reasoning_tokens": 334,
+   "total_tokens": 5523
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.003825,
+  "total_cost_usd_ticks": 38250000,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 3888,
+    "outputTokens": 483,
+    "cacheReadInputTokens": 1152,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.003825
+   }
+  }
+ }
+}

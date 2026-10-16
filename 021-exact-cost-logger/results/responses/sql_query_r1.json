@@ -1,0 +1,34 @@
+{
+ "label": "sql_query",
+ "rep": 1,
+ "text": "```sql\nSELECT\n  customer_id,\n  SUM(amount) AS total_amount\nFROM orders\nWHERE created_at >= CURRENT_TIMESTAMP - INTERVAL '30 days'\nGROUP BY customer_id\nORDER BY total_amount DESC\nLIMIT 5;\n```\n\nThis sums `amount` per `customer_id` for orders in the rolling 30 days ending now, then returns the five highest totals. Customers tied at the cutoff are broken arbitrarily by `LIMIT 5`. To include every customer tied for fifth place, replace the `ORDER BY` / `LIMIT` with:\n\n```sql\nORDER BY total_amount DESC\nFETCH FIRST 5 ROWS WITH TIES;\n```",
+ "raw": {
+  "text": "```sql\nSELECT\n  customer_id,\n  SUM(amount) AS total_amount\nFROM orders\nWHERE created_at >= CURRENT_TIMESTAMP - INTERVAL '30 days'\nGROUP BY customer_id\nORDER BY total_amount DESC\nLIMIT 5;\n```\n\nThis sums `amount` per `customer_id` for orders in the rolling 30 days ending now, then returns the five highest totals. Customers tied at the cutoff are broken arbitrarily by `LIMIT 5`. To include every customer tied for fifth place, replace the `ORDER BY` / `LIMIT` with:\n\n```sql\nORDER BY total_amount DESC\nFETCH FIRST 5 ROWS WITH TIES;\n```",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab2-05a7-7333-addb-78bdcf5cc424",
+  "requestId": "7b2e79ee-dc12-4d8a-bf2d-32a44f14e70b",
+  "cwd": "/tmp/g021_sql_query_zkaq_sv_",
+  "thought": "Writing a PostgreSQL query to find the top 5 customers by total order amount in the last 30 days.\n\nThe query filters orders from the last 30 days, groups by customer_id, sums amounts, and returns the top 5.",
+  "usage": {
+   "input_tokens": 14173,
+   "cache_read_input_tokens": 1536,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 409,
+   "reasoning_tokens": 268,
+   "total_tokens": 16118
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.01073312,
+  "total_cost_usd_ticks": 107331200,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 14173,
+    "outputTokens": 409,
+    "cacheReadInputTokens": 1536,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.01073312
+   }
+  }
+ }
+}

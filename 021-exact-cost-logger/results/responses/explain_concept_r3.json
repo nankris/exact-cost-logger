@@ -1,0 +1,34 @@
+{
+ "label": "explain_concept",
+ "rep": 3,
+ "text": "KV caching is a speed trick used when an LLM generates text one token at a time.\n\nIn attention, every new token is compared with all earlier tokens. That comparison uses two vectors per token: a **key** and a **value**. Without a cache, the model would rebuild those vectors for the whole prompt on every step.\n\nWith a KV cache, the model computes each token\u2019s key and value once and stores them. On the next step it only computes the key and value for the new token, then reuses the stored ones. The first pass over the prompt (prefill) fills the cache; later steps (decode) only append to it.\n\nThe tradeoff is memory. The cache grows with sequence length and batch size, so long chats use a lot of GPU memory in exchange for much faster generation.",
+ "raw": {
+  "text": "KV caching is a speed trick used when an LLM generates text one token at a time.\n\nIn attention, every new token is compared with all earlier tokens. That comparison uses two vectors per token: a **key** and a **value**. Without a cache, the model would rebuild those vectors for the whole prompt on every step.\n\nWith a KV cache, the model computes each token\u2019s key and value once and stores them. On the next step it only computes the key and value for the new token, then reuses the stored ones. The first pass over the prompt (prefill) fills the cache; later steps (decode) only append to it.\n\nThe tradeoff is memory. The cache grows with sequence length and batch size, so long chats use a lot of GPU memory in exchange for much faster generation.",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab3-492e-7053-b855-83b3c105116d",
+  "requestId": "35997ca1-16d0-40c9-9cbf-21054d1b7183",
+  "cwd": "/tmp/g021_explain_concept_yjjrmfhv",
+  "thought": "I will explain KV caching in LLM inference to a junior developer in about 120 words.",
+  "usage": {
+   "input_tokens": 13383,
+   "cache_read_input_tokens": 2304,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 320,
+   "reasoning_tokens": 156,
+   "total_tokens": 16007
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.01014492,
+  "total_cost_usd_ticks": 101449200,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 13383,
+    "outputTokens": 320,
+    "cacheReadInputTokens": 2304,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.01014492
+   }
+  }
+ }
+}

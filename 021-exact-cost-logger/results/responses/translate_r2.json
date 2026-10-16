@@ -1,0 +1,34 @@
+{
+ "label": "translate",
+ "rep": 2,
+ "text": "\u0c30\u0c47\u0c2a\u0c41 \u0c2a\u0c4d\u0c30\u0c2f\u0c3e\u0c23\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c2e\u0c41\u0c02\u0c26\u0c41 \u0c2e\u0c40 \u0c2b\u0c4b\u0c28\u0c4d\u200c\u0c28\u0c41 \u0c1a\u0c3e\u0c30\u0c4d\u0c1c\u0c4d \u0c1a\u0c47\u0c38\u0c41\u0c15\u0c4b\u0c35\u0c21\u0c02 \u0c17\u0c41\u0c30\u0c4d\u0c24\u0c41\u0c02\u0c1a\u0c41\u0c15\u0c4b\u0c02\u0c21\u0c3f. \u0c2c\u0c38\u0c4d\u0c38\u0c41 \u0c30\u0c3e\u0c24\u0c4d\u0c30\u0c3f 9 \u0c17\u0c02\u0c1f\u0c32\u0c15\u0c41 \u0c2c\u0c2f\u0c32\u0c41\u0c26\u0c47\u0c30\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f.",
+ "raw": {
+  "text": "\u0c30\u0c47\u0c2a\u0c41 \u0c2a\u0c4d\u0c30\u0c2f\u0c3e\u0c23\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c2e\u0c41\u0c02\u0c26\u0c41 \u0c2e\u0c40 \u0c2b\u0c4b\u0c28\u0c4d\u200c\u0c28\u0c41 \u0c1a\u0c3e\u0c30\u0c4d\u0c1c\u0c4d \u0c1a\u0c47\u0c38\u0c41\u0c15\u0c4b\u0c35\u0c21\u0c02 \u0c17\u0c41\u0c30\u0c4d\u0c24\u0c41\u0c02\u0c1a\u0c41\u0c15\u0c4b\u0c02\u0c21\u0c3f. \u0c2c\u0c38\u0c4d\u0c38\u0c41 \u0c30\u0c3e\u0c24\u0c4d\u0c30\u0c3f 9 \u0c17\u0c02\u0c1f\u0c32\u0c15\u0c41 \u0c2c\u0c2f\u0c32\u0c41\u0c26\u0c47\u0c30\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f.",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab2-9556-7372-bda1-02c4da35cfdb",
+  "requestId": "75ad24c4-8b5b-42d4-ba98-9350ba8df95c",
+  "cwd": "/tmp/g021_translate_0pnl9w_a",
+  "thought": "Translating the English reminder into simple Telugu.\n\nDrafting the simple Telugu translation now.\n\nFinalized the simple Telugu translation. Ready to present it.",
+  "usage": {
+   "input_tokens": 6094,
+   "cache_read_input_tokens": 9600,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 1074,
+   "reasoning_tokens": 988,
+   "total_tokens": 16768
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.00796688,
+  "total_cost_usd_ticks": 79668800,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 6094,
+    "outputTokens": 1074,
+    "cacheReadInputTokens": 9600,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.00796688
+   }
+  }
+ }
+}

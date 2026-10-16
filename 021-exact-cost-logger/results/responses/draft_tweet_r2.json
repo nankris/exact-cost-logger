@@ -1,0 +1,34 @@
+{
+ "label": "draft_tweet",
+ "rep": 2,
+ "text": "I'll look through the workspace for the blog post so the tweet matches what it actually says.",
+ "raw": {
+  "text": "I'll look through the workspace for the blog post so the tweet matches what it actually says.",
+  "stopReason": "cancelled",
+  "sessionId": "01a13ab2-7abd-74c3-8416-563154e1267a",
+  "requestId": "8fd204ea-2542-429e-8364-583ac3972214",
+  "cwd": "/tmp/g021_draft_tweet_x723lx2v",
+  "thought": "Drafting a tweet about the AI coding agent cost blog post.\n\nTwo draft options are ready. One leads with a week of token and retry tracking. The other opens with the real cost of shipping work.\n\nA third draft option was considered. The final tweet will lead with \"I stopped guessing and added it up: tokens, retries, and a full day of real coding work.\"\n\nThe draft totals 155 characters, well under the limit. A chart emoji is being considered for the end. A warmer alternative opening with \"Spent a week logging what my coding agent actually burns\" is also being weighed.\n\nThe draft was revised to avoid claiming the cost surprised the author, since the blog content is unknown. The new version opens with a question about real daily costs and leads into the post title.\n\nThe draft is being tightened further. The new opening reads: \"I finally measured a normal day with my AI coding agent \u2014 tokens, retries, the whole bill.\"",
+  "usage": {
+   "input_tokens": 13738,
+   "cache_read_input_tokens": 17920,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 2007,
+   "reasoning_tokens": 1794,
+   "total_tokens": 33665
+  },
+  "num_turns": 2,
+  "total_cost_usd": 0.01648252,
+  "total_cost_usd_ticks": 164825200,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 13738,
+    "outputTokens": 2007,
+    "cacheReadInputTokens": 17920,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 2,
+    "costUSD": 0.01648252
+   }
+  }
+ }
+}

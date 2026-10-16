@@ -1,0 +1,34 @@
+{
+ "label": "translate",
+ "rep": 2,
+ "text": "\u0c26\u0c2f\u0c1a\u0c47\u0c38\u0c3f \u0c30\u0c47\u0c2a\u0c1f\u0c3f \u0c2a\u0c4d\u0c30\u0c2f\u0c3e\u0c23\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c2e\u0c41\u0c02\u0c26\u0c41 \u0c2e\u0c40 \u0c2b\u0c4b\u0c28\u0c4d\u200c\u0c28\u0c41 \u0c1b\u0c3e\u0c30\u0c4d\u0c1c\u0c4d \u0c1a\u0c47\u0c2f\u0c3e\u0c32\u0c28\u0c3f \u0c17\u0c41\u0c30\u0c4d\u0c24\u0c41\u0c02\u0c1a\u0c41\u0c15\u0c4b\u0c02\u0c21\u0c3f. \u0c2c\u0c38\u0c4d\u0c38\u0c41 \u0c30\u0c3e\u0c24\u0c4d\u0c30\u0c3f 9 \u0c17\u0c02\u0c1f\u0c32\u0c15\u0c41 \u0c2c\u0c2f\u0c32\u0c41\u0c26\u0c47\u0c30\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f.",
+ "raw": {
+  "text": "\u0c26\u0c2f\u0c1a\u0c47\u0c38\u0c3f \u0c30\u0c47\u0c2a\u0c1f\u0c3f \u0c2a\u0c4d\u0c30\u0c2f\u0c3e\u0c23\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c2e\u0c41\u0c02\u0c26\u0c41 \u0c2e\u0c40 \u0c2b\u0c4b\u0c28\u0c4d\u200c\u0c28\u0c41 \u0c1b\u0c3e\u0c30\u0c4d\u0c1c\u0c4d \u0c1a\u0c47\u0c2f\u0c3e\u0c32\u0c28\u0c3f \u0c17\u0c41\u0c30\u0c4d\u0c24\u0c41\u0c02\u0c1a\u0c41\u0c15\u0c4b\u0c02\u0c21\u0c3f. \u0c2c\u0c38\u0c4d\u0c38\u0c41 \u0c30\u0c3e\u0c24\u0c4d\u0c30\u0c3f 9 \u0c17\u0c02\u0c1f\u0c32\u0c15\u0c41 \u0c2c\u0c2f\u0c32\u0c41\u0c26\u0c47\u0c30\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f.",
+  "stopReason": "end_turn",
+  "sessionId": "01a13ab5-23e6-7b22-b7e7-60d755caacc8",
+  "requestId": "9e857073-b1a0-459d-9a9c-52f629ad20cc",
+  "cwd": "/tmp/tmp2p8agqwv",
+  "thought": "Translating the English sentence into simple Telugu.",
+  "usage": {
+   "input_tokens": 3874,
+   "cache_read_input_tokens": 1152,
+   "cache_creation_input_tokens": 0,
+   "output_tokens": 494,
+   "reasoning_tokens": 402,
+   "total_tokens": 5520
+  },
+  "num_turns": 1,
+  "total_cost_usd": 0.00383792,
+  "total_cost_usd_ticks": 38379200,
+  "modelUsage": {
+   "grok-4.7-build": {
+    "inputTokens": 3874,
+    "outputTokens": 494,
+    "cacheReadInputTokens": 1152,
+    "cacheCreationInputTokens": 0,
+    "modelCalls": 1,
+    "costUSD": 0.00383792
+   }
+  }
+ }
+}

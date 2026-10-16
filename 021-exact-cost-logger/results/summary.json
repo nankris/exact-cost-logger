@@ -1,0 +1,34 @@
+{
+ "default_calls": 30,
+ "lean_calls": 20,
+ "default_total_usd": 0.3336,
+ "lean_total_usd": 0.0781,
+ "default_mean_usd": 0.01112,
+ "lean_mean_usd": 0.0039,
+ "default_mean_total_input": 20515,
+ "lean_mean_total_input": 5046,
+ "default_mean_output": 768,
+ "default_cached_share": 0.42,
+ "implied_price_per_M": {
+  "uncached_input": 0.68,
+  "cached_input": 0.17,
+  "output_incl_reasoning": 2.04
+ },
+ "fit_max_abs_residual_usd": 5.204170427930421e-18,
+ "reasoning_share_of_output": 0.806,
+ "input_share_of_cost": 0.859,
+ "models": [
+  "grok-4.7-build"
+ ],
+ "first_call": "2026-10-14 19:25:07",
+ "last_call": "2026-10-14 19:28:54",
+ "default_cancelled": 6,
+ "lean_cancelled": 0,
+ "cancelled_labels": [
+  "draft_tweet",
+  "regex_help"
+ ],
+ "cost_of_cancelled_usd": 0.0772,
+ "daily_10_prompts_default": 0.1112,
+ "daily_10_prompts_lean": 0.039
+}
