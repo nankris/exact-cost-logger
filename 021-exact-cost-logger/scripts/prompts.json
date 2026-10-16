@@ -1,0 +1,12 @@
+{
+ "summarise_text": "Summarise this in 3 bullet points:\n\nThe Indian Space Research Organisation (ISRO) was formed in 1969 and has since built a reputation for frugal engineering. Its Mars Orbiter Mission in 2013 reached Mars orbit on the first attempt at a cost often compared to that of a Hollywood film. Chandrayaan-3 landed near the lunar south pole in August 2023, making India the first country to do so. ISRO also runs a large commercial launch business through its PSLV rocket, which has carried hundreds of foreign satellites, and is now developing the Gaganyaan crewed spaceflight programme.",
+ "write_function": "Write a Python function `dedupe_keep_order(items)` that removes duplicates from a list while keeping the first occurrence order. Include a docstring and two doctest examples. Only output the code.",
+ "explain_error": "Explain this error and how to fix it, briefly:\n\nTraceback (most recent call last):\n  File \"app.py\", line 12, in <module>\n    total = sum(prices) / len(prices)\nZeroDivisionError: division by zero",
+ "draft_tweet": "Draft a tweet (under 270 characters) announcing a blog post titled 'I measured what my AI coding agent really costs per day'. Friendly, no hashtags spam, at most one emoji.",
+ "regex_help": "Give me a regex that matches Indian mobile numbers: optional +91 or 0 prefix, then 10 digits starting with 6-9. Show 3 test strings that match and 2 that don't.",
+ "sql_query": "Write a SQL query: table orders(id, customer_id, amount, created_at). Return the top 5 customers by total amount in the last 30 days, with their total. PostgreSQL.",
+ "translate": "Translate into simple Telugu: 'Please remember to charge your phone before the trip tomorrow. The bus leaves at 9 PM.'",
+ "email_reply": "Write a short polite reply declining a recruiter's offer for a role because the salary is below my expectations, but say I'm open to future roles. 4 sentences max.",
+ "code_review": "Review this JavaScript and list the bugs briefly:\n\nfunction avg(arr) {\n  let s = 0;\n  for (let i = 0; i <= arr.length; i++) s += arr[i];\n  return s / arr.length;\n}",
+ "explain_concept": "Explain what KV caching is in LLM inference to a junior developer, in about 120 words."
+}
